@@ -1,0 +1,18 @@
+  # Crear frames
+    frame_superior = tk.Frame(root)
+    frame_superior.pack(pady=10)
+
+    frame_inferior = tk.Frame(root)
+    frame_inferior.pack(pady=10)
+
+    # Función para generar paleta
+    def generar_paleta():
+        paleta = Paleta()
+        colores = paleta.colores
+        crear_paneles_colores(frame_inferior, colores)
+
+    # Crear botones y pasar función como parámetro
+    crear_botones(frame_superior, generar_paleta)
+
+    # Paneles iniciales vacíos
+    crear_paneles_colores(frame_inferior)
