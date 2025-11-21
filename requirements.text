@@ -1,0 +1,10 @@
+# Librerías estándar usadas en el proyecto
+tkinter        # Interfaz gráfica (ya viene con Python en la mayoría de sistemas)
+colorsys       # Conversión de modelos de color (RGB ↔ HLS)
+
+# Librerías externas opcionales
+numpy          # Para cálculos numéricos y manipulación de arrays
+scikit-image   # Para trabajar con modelo LAB (rgb2lab, lab2rgb)
+
+# Si planeas usar colormath en vez de scikit-image:
+# colormath

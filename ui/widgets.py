@@ -22,7 +22,7 @@ def crear_paneles_colores(frame, colores=None):
         widget.destroy()
 
     if colores is None:
-        colores = [(255, 255, 255)] * 4  # blanco por defecto
+        colores = [(255, 255, 255)] * 4  
 
     for color in colores:
         hex_color = rgb_a_hex(color)
